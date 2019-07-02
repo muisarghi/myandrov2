@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lbkomunitas.Fragment2"
+    android:id="@+id/fragment2">
+	
+	<LinearLayout
+            android:id="@+id/linBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/BlueGrey50"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+			
+	<ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:onClick="mHome"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/ivSearh"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+				android:onClick="mCari"
+                android:src="@drawable/search" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+				android:onClick="mTmb"
+                android:src="@drawable/add" />
+
+            <ImageView
+                android:id="@+id/ivFavorite"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+				android:onClick="mLike"
+                android:src="@drawable/fave" />
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+				android:onClick="mProfile"
+                android:src="@drawable/profile" />
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

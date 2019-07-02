@@ -1,0 +1,6 @@
+query LombaQuery {
+  id
+  createdAt
+  lomba
+  ketlomba
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lbkomunitas">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/parrot1"
+        android:label="Komunitas Lovebird"
+        android:roundIcon="@drawable/parrot1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Lomba"></activity>
+        <activity android:name=".Diskusi"></activity>
+		<activity android:name=".Berita"></activity>
+		<activity android:name=".Pencarian"></activity>
+		<activity android:name=".TmbPost"></activity>
+		<activity android:name=".TmbDiskusi"></activity>
+		<activity android:name=".TmbLomba"></activity>
+		<activity android:name=".TmbBerita"></activity>
+		<activity android:name=".Like"></activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".Dashboard" />
+		<activity android:name=".Coba" />
+        <activity android:name=".Daftar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+			tools:context=".MenuAtas"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <ImageView
+                android:id="@+id/mnLomba"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:onClick="mLomba"
+                android:src="@drawable/trophy_24"/>
+
+            <ImageView
+                android:id="@+id/mnDiskusi"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:src="@drawable/discuss" />
+
+            <ImageView
+                android:id="@+id/mnBerita"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:src="@drawable/parrot1" />
+
+        </LinearLayout>

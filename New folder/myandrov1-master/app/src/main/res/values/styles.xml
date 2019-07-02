@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+<!--
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+	Customize your theme here. 
+	<item name="colorPrimary">@color/colorPrimary</item>
+	<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+	<item name="colorAccent">@color/colorAccent</item>
+	 
+	</style> -->
+	
+	<style name="field_profile_count_styles">
+<item name="android:textColor">#0f0f0f</item>
+<item name="android:textStyle">bold</item>
+<item name="android:textSize">16sp</item>
+<item name="android:textAlignment">center</item>
+</style>
+ 
+<style name="label_profile_count_styles">
+<item name="android:textColor">#7c7c7c</item>
+<item name="android:textAlignment">center</item>
+</style>
+ 
+<style name="field_profile_picture_styles">
+<item name="android:scaleType">centerCrop</item>
+</style>
+ 
+<style name="field_profile_highlight_styles">
+<item name="android:paddingTop">5dp</item>
+<item name="android:paddingBottom">5dp</item>
+<item name="android:paddingRight">10dp</item>
+<item name="android:paddingLeft">10dp</item>
+ 
+<item name="android:layout_width">80dp</item>
+<item name="android:layout_height">80dp</item>
+</style>
+ 
+<style name="field_profile_highlight_name_styles">
+<item name="android:textAlignment">center</item>
+</style>
+ 
+<!--
+<style name="custom_bottom_navbar_styles">
+<item name="elevation">0dp</item>
+<item name="android:backgroundTint">@color/colorPrimary</item>
+<item name="itemIconTint">@color/bottom_navigation_selector</item>
+<item name="itemTextColor">@color/bottom_navigation_selector</item>
+<item name="labelVisibilityMode">unlabeled</item>
+<item name="android:background">?android:attr/windowBackground</item>
+</style>-->
+ 
+<style name="button_profile_styles">
+<item name="android:background">@drawable/bg_profile_button</item>
+<item name="android:stateListAnimator">@null</item>
+<item name="android:textAllCaps">false</item>
+</style>
+
+
+</resources>

@@ -1,0 +1,18 @@
+TABLE USER
+
+id
+nama
+email
+password
+bio
+notelp
+
+
+
+TABLE POSTING
+id
+namafile
+link
+createdAt
+updateAt
+idUser
