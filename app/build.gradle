@@ -51,8 +51,8 @@ dependencies {
 
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
     implementation 'com.squareup.okhttp3:okhttp:3.4.1'
-    //compileOnly 'org.jetbrains:annotations:13.0'
-    //testCompileOnly 'org.jetbrains:annotations:13.0'
+    compileOnly 'org.jetbrains:annotations:13.0'
+    testCompileOnly 'org.jetbrains:annotations:13.0'
 
     compileOnly 'javax.annotation:jsr250-api:1.0'
 }

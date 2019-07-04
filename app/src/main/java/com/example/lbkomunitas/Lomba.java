@@ -10,7 +10,7 @@ import com.apollographql.apollo.exception.ApolloException;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import javax.annotation.Nonnull;
+//import javax.annotation.Nonnull;
 
 public class Lomba extends AppCompatActivity
 {
@@ -30,12 +30,12 @@ public class Lomba extends AppCompatActivity
         MyApolloClient.getMyApolloCleint().query(
                 GetAllLombaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllLombaQuery.Data>() {
                     @Override
-            public void onResponse(@Nonnull Response<GetAllLombaQuery.Data> response)
+            public void onResponse( Response<GetAllLombaQuery.Data> response)
                     {
-                    Log.d(TAG,"OnResponse: " + response.data().getAllLomba().get(0).title());
+                    Log.d(TAG,"OnResponse: " + response.data().getAllLomba().get(0).lomba());
                     }
                     @Override
-            public void onFailure(@Nonnull ApolloException e)
+            public void onFailure(ApolloException e)
                     {}
         });
 
