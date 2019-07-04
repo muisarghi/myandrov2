@@ -8,7 +8,8 @@ import com.apollographql.apollo.ApolloCall;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 
-
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import javax.annotation.Nonnull;
 
 public class Lomba extends AppCompatActivity
@@ -23,12 +24,13 @@ public class Lomba extends AppCompatActivity
 		getLomba();
 	}
 
+
 	private void getLomba()
     {
         MyApolloClient.getMyApolloCleint().query(
-                getAllLombaQuery.builder().build()).enqueue(new ApolloCall.Callback<getAllLombaQuery.Data>() {
+                GetAllLombaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllLombaQuery.Data>() {
                     @Override
-            public void onResponse(@Nonnull Response<getAllLombaQuery.Data> response)
+            public void onResponse(@Nonnull Response<GetAllLombaQuery.Data> response)
                     {
                     Log.d(TAG,"OnResponse: " + response.data().getAllLomba().get(0).title());
                     }
@@ -38,4 +40,5 @@ public class Lomba extends AppCompatActivity
         });
 
     }
+
 }

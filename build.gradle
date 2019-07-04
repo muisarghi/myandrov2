@@ -8,11 +8,19 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
-        classpath 'com.apollographql.apollo:apollo-gradle-plugin:0.3.2'
-        classpath 'com.apollographql.apollo:apollo-gradle-plugin:1.0.2-SNAPSHOT'
+        //classpath 'com.apollographql.apollo:apollo-gradle-plugin:1.0.1'
+        //classpath 'com.apollographql.apollo:apollo-gradle-plugin:0.5.0'
+        //classpath 'com.apollographql.apollo:apollo-gradle-plugin:1.0.2-SNAPSHOT'
+        classpath 'com.apollographql.apollo:apollo-gradle-plugin:1.0.0-alpha5'
+
+        //classpath 'com.apollographql.apollo:gradle-plugin:1.0.1'
+        //classpath 'com.apollographql.apollo:gradle-plugin:1.0.1'
         classpath 'com.squareup.okhttp3:logging-interceptor:3.8.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath 'org.jetbrains:annotations:13.0'
+
+
     }
 }
 
@@ -21,6 +29,12 @@ allprojects {
         google()
         jcenter()
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
     }
 }
 

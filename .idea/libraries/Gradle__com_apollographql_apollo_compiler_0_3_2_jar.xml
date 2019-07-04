@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.apollographql.apollo:compiler:0.3.2@jar">
+    <CLASSES>
+      <root url="jar://D:/Android/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo/compiler/0.3.2/9a36d2b353460e9ed3e6d49721992ce67d6096e6/compiler-0.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/Android/.gradle/caches/modules-2/files-2.1/com.apollographql.apollo/compiler/0.3.2/b5d37fdeafb8bda09ee52b04d793155c97a03d4b/compiler-0.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

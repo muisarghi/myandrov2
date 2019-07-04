@@ -8,7 +8,7 @@ import okhttp3.Request;
 
 public class MyApolloClient
 {
-	private static final String BASE_URL = "http://192.168.100.50:4000";
+	private static final String BASE_URL = "https://lovebird-komunitas.herokuapp.com/";
 	private static ApolloClient myApolloCleint;
 
 	public static ApolloClient getMyApolloCleint()
