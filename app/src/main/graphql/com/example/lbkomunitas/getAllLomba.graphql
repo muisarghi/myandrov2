@@ -2,5 +2,6 @@ query getAllLombaQuery{
   getAllLomba{
     lomba
     ketlomba
+    createdAt
   }
 }
