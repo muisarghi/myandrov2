@@ -140,10 +140,40 @@
             </LinearLayout>
 
 
-            <ListView
-                android:id="@+id/listView"
-                android:layout_width="match_parent"
-                android:layout_height="440dp" />
+            <TextView
+                android:id="@+id/lomba1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lomba1"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/ketlomba1"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ket Lomba1"
+                android:textSize="10dp"
+                />
+
+            <TextView
+                android:id="@+id/lomba2"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lomba2"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/ketlomba2"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ket Lomba2"
+                android:textSize="10dp"
+                />
 
 
 
