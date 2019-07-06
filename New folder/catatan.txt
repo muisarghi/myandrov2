@@ -1,0 +1,8 @@
+File: getallPosts.graphql
+query: allPostQuery
+class: allPosts
+
+
+File: getAllLomba.graphql
+query: getAllLombaQuery
+class: getAllLombas

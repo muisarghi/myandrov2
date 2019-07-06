@@ -1,0 +1,6 @@
+query getAllLombaQuery{
+  getAllLombas{
+    lomba
+    ketlomba
+  }
+}
