@@ -1,5 +1,5 @@
+//package com.example.lbkomunitas;
 package com.example.lbkomunitas;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -21,7 +21,7 @@ public class ProfileC extends AppCompatActivity {
 	
 	public void mLomba(View v)
     {
-        Intent i = new Intent(this,Lomba.class);
+        Intent i = new Intent(this,MultiColumnActivity.class);
         startActivity(i);
     }
 	

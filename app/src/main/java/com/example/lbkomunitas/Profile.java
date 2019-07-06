@@ -21,7 +21,7 @@ public class Profile extends AppCompatActivity {
 	
 	public void mLomba(View v)
     {
-        Intent i = new Intent(this,Lomba.class);
+        Intent i = new Intent(this,MultiColumnActivity.class);
         startActivity(i);
     }
 	

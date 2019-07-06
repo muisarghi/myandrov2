@@ -32,8 +32,8 @@ public class Lomba extends AppCompatActivity
 	private String t1,t2,d1,d2;
 	private Integer i, jumlah;
 
-    private static final Object LOMBA_COLUMN = "lombaxy";
-    private static final Object KETLOMBA_COLUMN = "ketlombaxy";
+    private static final String LOMBA_COLUMN = "LOMBA_COLUMN";
+    private static final String KETLOMBA_COLUMN = "KETLOMBA_COLUMN";
 
     private ListView listView;
     ArrayAdapter<CharSequence> adapter;
@@ -71,11 +71,12 @@ public class Lomba extends AppCompatActivity
 
                 jumlah = GetAllLombaQuery.GetAllLomba.$responseFields.length;
                 //HashMap temp = new HashMap();
+                HashMap<String, String> temp = new HashMap<>();
                 for (i=0 ; i < jumlah ; ++i)
                 {
-                    HashMap<String, String> temp = new HashMap<>();
-                    temp.put((String) LOMBA_COLUMN, response.data().getAllLomba().get(i).lomba());
-                    temp.put((String) KETLOMBA_COLUMN, response.data().getAllLomba().get(i).ketlomba());
+
+                    temp.put(LOMBA_COLUMN, response.data().getAllLomba().get(i).lomba());
+                    temp.put(KETLOMBA_COLUMN, response.data().getAllLomba().get(i).ketlomba());
                 list1.add(temp);
                 }
 
@@ -101,16 +102,17 @@ public class Lomba extends AppCompatActivity
                 );
                 */
                 final ArrayAdapter adapter;
-                adapter = new ArrayAdapter(Lomba.this, list1, list_item,
-                        new String[]{(LOMBA_COLUMN), (KETLOMBA_COLUMN)},
+                /*adapter = new ArrayAdapter(Lomba.this, list1, list_item,
+                        new String[]{LOMBA_COLUMN, KETLOMBA_COLUMN},
                         new int[]{R.id.lombaxy, R.id.ketlombaxy});
+                        */
 
                 Lomba.this.runOnUiThread(new Runnable()
                 {
                     @Override
                     public void run() {
                         ListView listView = (ListView) findViewById(R.id.listView);
-                        listView.setAdapter(adapter);
+                        //listView.setAdapter(adapter);
                     }
 
                 });
