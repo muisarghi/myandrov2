@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lbkomunitas">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/parrot1"
@@ -9,25 +11,24 @@
         android:roundIcon="@drawable/parrot1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lomba"></activity>
-        <activity android:name=".Diskusi"></activity>
-		<activity android:name=".Berita"></activity>
-		<activity android:name=".Pencarian"></activity>
-		<activity android:name=".TmbPost"></activity>
-		<activity android:name=".TmbDiskusi"></activity>
-		<activity android:name=".TmbLomba"></activity>
-		<activity android:name=".TmbBerita"></activity>
-		<activity android:name=".EditProfile"></activity>
-		<activity android:name=".Like"></activity>
+        <activity android:name=".jancok"></activity>
+        <activity android:name=".Lomba" />
+        <activity android:name=".Diskusi" />
+        <activity android:name=".Berita" />
+        <activity android:name=".Pencarian" />
+        <activity android:name=".TmbPost" />
+        <activity android:name=".TmbDiskusi" />
+        <activity android:name=".TmbLomba" />
+        <activity android:name=".TmbBerita" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".Like" />
         <activity android:name=".Profile" />
-		<activity android:name=".ProfileC" />
-		<activity android:name=".DetImage" />
-		<activity android:name=".Like"></activity>
+        <activity android:name=".ProfileC" />
+        <activity android:name=".DetImage" />
+        <activity android:name=".Like" />
         <activity android:name=".Profile" />
         <activity android:name=".Dashboard" />
-		<activity android:name=".Coba" />
         <activity android:name=".Daftar" />
-        <activity android:name=".MultiColumnActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
