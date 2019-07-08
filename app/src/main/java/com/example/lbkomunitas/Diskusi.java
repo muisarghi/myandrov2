@@ -9,16 +9,67 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.api.Response;
+import com.apollographql.apollo.exception.ApolloException;
 //import android.view.View.OnClickListener;
 
 public class Diskusi extends AppCompatActivity {
+    private TextView discussi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diskusi);
+        discussi = (TextView) findViewById(R.id.discuss);
+
+        getDiskusi();
     }
-	
+
+
+    private void getDiskusi()
+    {
+        MyApolloClient.getMyApolloCleint().query(GetAllDiskusiQuery.builder().build()).enqueue
+                (new ApolloCall.Callback<GetAllDiskusiQuery.Data>()
+                {
+
+                    @Override
+                    public void onResponse( Response<GetAllDiskusiQuery.Data> response)
+                    {
+                        final StringBuffer bufferdis = new StringBuffer();
+                        for (GetAllDiskusiQuery.GetAllDiskusi feed : response.data().getAllDiskusi()) {
+                            bufferdis.append(feed.judul);
+                            bufferdis.append(" \n ");
+                            bufferdis.append(feed.isi);
+                            bufferdis.append(" \n \n ");
+                        }
+
+
+                        Diskusi.this.runOnUiThread(new Runnable()
+                        {
+                            @Override
+                            public void run()
+                            {
+                                discussi.setText(bufferdis.toString());
+
+                            }
+
+                        });
+
+
+                    }
+                    @Override
+                    public void onFailure(ApolloException e)
+                    {
+                    }
+                });
+
+    }
+
+
+
 	public void mLomba(View v)
     {
         Intent i = new Intent(this,Lomba.class);

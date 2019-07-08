@@ -1,0 +1,14 @@
+mutation newDiskusiMutation
+(
+  $judul: String!,
+  $isi: String!
+)
+{
+  createDiskusi(
+    judul: $judul
+    isi: $isi
+  )
+  {
+    id
+  }
+}

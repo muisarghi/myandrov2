@@ -8,7 +8,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.api.Response;
+import com.apollographql.apollo.exception.ApolloException;
+
+import org.jetbrains.annotations.NotNull;
 
 public class TmbDiskusi extends AppCompatActivity {
 
@@ -27,7 +34,45 @@ public class TmbDiskusi extends AppCompatActivity {
             }
         });
     }
-	
+
+
+    public void nTmbDiskusi(View v)
+    {
+        EditText editdiskusis = (EditText)findViewById(R.id.editDiskusi);
+        EditText editisidiskusis = (EditText)findViewById(R.id.editIsiDiskusi);
+
+        MyApolloClient.getMyApolloCleint().mutate(NewDiskusiMutation.builder()
+                .judul(editdiskusis.getText().toString())
+                .isi(editisidiskusis.getText().toString()).build())
+                .enqueue(new ApolloCall.Callback<NewDiskusiMutation.Data>() {
+
+
+                    @Override
+                    public void onResponse(@NotNull Response<NewDiskusiMutation.Data> response)
+                    {
+                        Intent intenti=new Intent(TmbDiskusi.this,Diskusi.class);
+                        startActivity(intenti);
+
+                        /*
+                        TmbLomba.this.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(TmbLomba.this,"Data Telah Masuk", Toast.LENGTH_SHORT).show();
+
+                            }
+                        });*/
+
+                    }
+
+                    @Override
+                    public void onFailure(@NotNull ApolloException e) {
+
+                    }
+
+
+
+                });
+    }
 	public void mLomba(View v)
     {
         Intent i = new Intent(this,Lomba.class);

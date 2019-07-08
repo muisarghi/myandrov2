@@ -62,7 +62,7 @@
 			<TableRow
                 android:baselineAligned="true"
                 android:layout_width="match_parent"
-                android:layout_height="30dp">
+                android:layout_height="50dp">
 
                 <TextView
                     android:id="@+id/textView5"
@@ -79,7 +79,8 @@
                     android:layout_height="50dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine" />
+                    android:inputType="textMultiLine"
+                    android:textSize="12sp" />
             </TableRow>
         </LinearLayout>
 
@@ -93,7 +94,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="50dp"
 				>
                 <TextView
                     android:id="@+id/textView5a"
@@ -110,7 +111,8 @@
                     android:layout_height="50dp"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine" />
+                    android:inputType="textMultiLine"
+                    android:textSize="12sp" />
             </TableRow>
         </LinearLayout>
 

@@ -84,6 +84,7 @@
                 android:id="@+id/btnTmbDiskusi"
                 android:layout_width="386dp"
                 android:layout_height="wrap_content"
+                android:onClick="nTmbDiskusi"
                 android:text="SIMPAN" />
 
         </LinearLayout>

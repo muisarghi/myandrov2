@@ -1,3 +1,4 @@
+
 package com.example.lbkomunitas;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,7 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
+import android.app.ProgressDialog;
 import com.apollographql.apollo.ApolloCall;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
@@ -62,7 +63,6 @@ public class Lomba extends AppCompatActivity
         MyApolloClient.getMyApolloCleint().query(GetAllLombaQuery.builder().build()).enqueue
                 (new ApolloCall.Callback<GetAllLombaQuery.Data>()
         {
-
 
             @Override
             public void onResponse( Response<GetAllLombaQuery.Data> response)
