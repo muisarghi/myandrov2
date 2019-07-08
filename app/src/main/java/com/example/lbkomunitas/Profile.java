@@ -21,7 +21,7 @@ public class Profile extends AppCompatActivity {
 	
 	public void mLomba(View v)
     {
-        Intent i = new Intent(this,jancok.class);
+        Intent i = new Intent(this,Lomba.class);
         startActivity(i);
     }
 	

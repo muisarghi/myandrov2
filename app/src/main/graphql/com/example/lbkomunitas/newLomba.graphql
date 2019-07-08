@@ -1,0 +1,14 @@
+mutation newLombaMutation
+(
+  $lomba: String!,
+  $ketlomba: String!
+)
+{
+  createLomba(
+    lomba: $lomba
+    ketlomba: $ketlomba
+  )
+  {
+    id
+  }
+}

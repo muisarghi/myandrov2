@@ -45,9 +45,9 @@ public class Lomba extends AppCompatActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lomba);
 
-		//lomba1 = (TextView) findViewById(R.id.lomba1);
+		lomba1 = (TextView) findViewById(R.id.lombax);
         //lomba2 = (TextView) findViewById(R.id.lomba2);
-        //ketlomba1 = (TextView) findViewById(R.id.ketlomba1);
+        ketlomba1 = (TextView) findViewById(R.id.ketlombax);
         //ketlomba2 = (TextView) findViewById(R.id.ketlomba2);
 
 		getLomba();
@@ -56,63 +56,31 @@ public class Lomba extends AppCompatActivity
 
 	private void getLomba()
     {
-        MyApolloClient.getMyApolloCleint().query(GetAllLombaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllLombaQuery.Data>()
+        MyApolloClient.getMyApolloCleint().query(GetAllLombaQuery.builder().build()).enqueue
+                (new ApolloCall.Callback<GetAllLombaQuery.Data>()
         {
 
 
             @Override
-            public void onResponse( Response<GetAllLombaQuery.Data> response) {
-                //ArrayList<Lomba> lombaList = new ArrayList<>();
-                final ArrayList<HashMap<String, String>> list1 = new ArrayList<HashMap<String, String>>();
-                //final ArrayAdapter<CharSequence> adapter;
-                final StringBuffer buffer1 = new StringBuffer();
-                final StringBuffer buffer2 = new StringBuffer();
-                final ListView listview = (ListView) findViewById(R.id.listView);
-
-                jumlah = GetAllLombaQuery.GetAllLomba.$responseFields.length;
-                //HashMap temp = new HashMap();
-                HashMap<String, String> temp = new HashMap<>();
-                for (i=0 ; i < jumlah ; ++i)
-                {
-
-                    temp.put(LOMBA_COLUMN, response.data().getAllLomba().get(i).lomba());
-                    temp.put(KETLOMBA_COLUMN, response.data().getAllLomba().get(i).ketlomba());
-                list1.add(temp);
-                }
-
-
-                /*
+            public void onResponse( Response<GetAllLombaQuery.Data> response)
+            {
+                final StringBuffer buffer = new StringBuffer();
                 for (GetAllLombaQuery.GetAllLomba feed : response.data().getAllLomba()) {
-                    buffer1.append(feed.lomba);
-                    buffer1.append(',');
-                    buffer2.append(feed.ketlomba);
-                    buffer2.append(',');
+                    buffer.append(feed.lomba);
+                    buffer.append(" \n ");
+                    buffer.append(feed.ketlomba);
+                    buffer.append(" \n \n ");
                 }
-                */
 
-                /*
-                String[] buffer1x = buffer1.toString().split(",");
-                String[] buffer2x = buffer2.toString().split(",");
 
-                final ArrayAdapter adapter = new ArrayAdapter<String>(Lomba.this, list_item, R.id.lombaxy,buffer1x) ;
 
-                ArrayAdapter adapter = new ArrayAdapter<String>(Lomba.this, list1, R.layout.list_item,
-                        new String[]{String.valueOf(LOMBA_COLUMN), String.valueOf(KETLOMBA_COLUMN)},
-                        new int[]{R.id.lombaxy, R.id.ketlombaxy}
-                );
-                */
-                final ArrayAdapter adapter;
-                /*adapter = new ArrayAdapter(Lomba.this, list1, list_item,
-                        new String[]{LOMBA_COLUMN, KETLOMBA_COLUMN},
-                        new int[]{R.id.lombaxy, R.id.ketlombaxy});
-                        */
 
                 Lomba.this.runOnUiThread(new Runnable()
                 {
                     @Override
                     public void run() {
-                        ListView listView = (ListView) findViewById(R.id.listView);
-                        //listView.setAdapter(adapter);
+                            lomba1.setText(buffer.toString());
+
                     }
 
                 });

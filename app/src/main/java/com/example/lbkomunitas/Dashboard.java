@@ -11,29 +11,31 @@ import android.widget.Button;
 import android.widget.ImageView;
 //import android.view.View.OnClickListener;
 
-public class Dashboard extends AppCompatActivity {
+public class Dashboard extends AppCompatActivity
+{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
     }
 
 
-    public void mLomba(View v)
+    public void mLomba(View vdash)
     {
-        Intent i = new Intent(this,Lomba.class);
-        startActivity(i);
+        Intent idashboard = new Intent(Dashboard.this,Lomba.class);
+        startActivity(idashboard);
     }
 	
-	public void mDiskusi(View va)
+	public void mDiskusi(View vadash)
     {
-        Intent ia = new Intent(this,Diskusi.class);
-        startActivity(ia);
+        Intent iadashboard = new Intent(Dashboard.this,Diskusi.class);
+        startActivity(iadashboard);
     }
 	
-	public void mHome(View vb)
+	public void mHome(View vbdash)
     {
         Intent ib = new Intent(this,Dashboard.class);
         startActivity(ib);
@@ -53,7 +55,7 @@ public class Dashboard extends AppCompatActivity {
 	
 	public void mTmb(View ve)
     {
-        Intent ie = new Intent(this,TmbPost.class);
+        Intent ie = new Intent(this,TmbLomba.class);
         startActivity(ie);
     }
 	

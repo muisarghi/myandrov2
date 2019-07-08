@@ -76,7 +76,7 @@
                 <EditText
                     android:id="@+id/editLomba"
                     android:layout_width="300dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine" />
@@ -107,7 +107,7 @@
                 <EditText
                     android:id="@+id/editKetlomba"
                     android:layout_width="300dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine" />
@@ -127,6 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="nTmbLomba"
                 android:text="SIMPAN" />
 
         </LinearLayout>
