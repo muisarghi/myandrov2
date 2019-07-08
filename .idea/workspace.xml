@@ -309,6 +309,14 @@
       <change afterPath="$PROJECT_DIR$/../app v1/app/src/main/res/layout/activity_dashboard.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../app v1/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../app v1/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_apollographql_apollo_apollo_api_0_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_apollographql_apollo_apollo_runtime_0_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nytimes_android_cache_2_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_moshi_moshi_1_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_6_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_jsr250_api_1_0_jar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../contoh/ListView_Multi_Column/ListView_Multi_Column/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../contoh/ListView_Multi_Column/ListView_Multi_Column/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../email.txt" afterDir="false" />
@@ -8117,14 +8125,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/ProfileC.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/ProfileC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/TmbLomba.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/TmbLomba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tmblomba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tmblomba.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -8141,14 +8142,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="-670">
+              <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
               <folding>
-                <element signature="e#2252#2544#0" expanded="true" />
-                <element signature="e#2543#2544#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2385#2592#0" expanded="true" />
+                <element signature="e#2591#2592#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -8167,8 +8169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/TmbLomba.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="418">
+              <caret line="129" column="5" selection-start-line="83" selection-start-column="4" selection-end-line="129" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -8176,12 +8178,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="289">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="e#1174#1207#0" expanded="true" />
               </folding>
@@ -8274,9 +8276,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/ProfileC.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Dashboard.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tmblomba.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/TmbLomba.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java" />
       </list>
     </option>
   </component>
@@ -8597,14 +8599,14 @@
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4993573" weight="0.38577586" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4993573" weight="0.32467532" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.10604113" side_tool="true" weight="0.0875" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.7056555" visible="true" weight="0.15804195" />
+      <window_info active="true" anchor="bottom" id="Build" order="6" sideWeight="0.7056555" visible="true" weight="0.15804195" />
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.44396552" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3275862" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info active="true" anchor="right" id="Preview" order="3" visible="true" weight="0.1940874" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.1940874" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
     </layout>
@@ -8959,34 +8961,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="289">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
-            <element signature="e#2252#2544#0" expanded="true" />
-            <element signature="e#2543#2544#0" expanded="true" />
+            <element signature="e#1174#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/TmbLomba.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="418">
+          <caret line="129" column="5" selection-start-line="83" selection-start-column="4" selection-end-line="129" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="-670">
+          <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
           <folding>
-            <element signature="e#1174#1207#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2385#2592#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
           </folding>
         </state>
       </provider>

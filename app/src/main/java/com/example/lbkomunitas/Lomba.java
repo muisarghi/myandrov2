@@ -1,8 +1,11 @@
 package com.example.lbkomunitas;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import com.apollographql.apollo.ApolloCall;
@@ -73,13 +76,12 @@ public class Lomba extends AppCompatActivity
                 }
 
 
-
-
                 Lomba.this.runOnUiThread(new Runnable()
                 {
                     @Override
-                    public void run() {
-                            lomba1.setText(buffer.toString());
+                    public void run()
+                    {
+                        lomba1.setText(buffer.toString());
 
                     }
 
@@ -95,5 +97,54 @@ public class Lomba extends AppCompatActivity
 
     }
 
+
+
+    public void mLomba(View v)
+    {
+        Intent i = new Intent(this,Lomba.class);
+        startActivity(i);
+    }
+
+    public void mDiskusi(View v)
+    {
+        Intent ia = new Intent(this,Diskusi.class);
+        startActivity(ia);
+    }
+
+    public void mHome(View v)
+    {
+        Intent ib = new Intent(this,Dashboard.class);
+        startActivity(ib);
+    }
+
+    public void mBerita(View v)
+    {
+        Intent ic = new Intent(this,Berita.class);
+        startActivity(ic);
+    }
+
+    public void mCari(View v)
+    {
+        Intent id = new Intent(this,Pencarian.class);
+        startActivity(id);
+    }
+
+    public void mTmb(View v)
+    {
+        Intent ie = new Intent(this,TmbLomba.class);
+        startActivity(ie);
+    }
+
+    public void mLike(View v)
+    {
+        Intent ig = new Intent(this,Like.class);
+        startActivity(ig);
+    }
+
+    public void mProfile(View v)
+    {
+        Intent ih = new Intent(this,Profile.class);
+        startActivity(ih);
+    }
 
 }
