@@ -1,0 +1,1 @@
+apollo schema:download --endpoint=http://localhost:4000 schema.json
