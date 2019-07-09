@@ -8,7 +8,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.api.Response;
+import com.apollographql.apollo.exception.ApolloException;
+
+import org.jetbrains.annotations.NotNull;
 
 public class TmbBerita extends AppCompatActivity {
 
@@ -16,7 +23,7 @@ public class TmbBerita extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tmbberita);
-        Button btnSaveBerita = (Button) findViewById(R.id.btnTmbBerita);
+        /*Button btnSaveBerita = (Button) findViewById(R.id.btnTmbBerita);
         btnSaveBerita.setOnClickListener(new View.OnClickListener()
         {
 
@@ -26,8 +33,48 @@ public class TmbBerita extends AppCompatActivity {
                 startActivity(iz);
             }
         });
+        */
     }
-	
+
+    public void nTmbBerita(View v)
+    {
+        EditText editheadlines = (EditText)findViewById(R.id.editHeadline);
+        EditText editberitas = (EditText)findViewById(R.id.editBerita);
+
+        MyApolloClient.getMyApolloCleint().mutate(NewBeritaMutation.builder()
+                .headline(editheadlines.getText().toString())
+                .berita(editberitas.getText().toString()).build())
+                .enqueue(new ApolloCall.Callback<NewBeritaMutation.Data>() {
+
+
+                    @Override
+                    public void onResponse(@NotNull Response<NewBeritaMutation.Data> response)
+                    {
+                        Intent intenti=new Intent(TmbBerita.this,Berita.class);
+                        startActivity(intenti);
+
+                        /*
+                        TmbLomba.this.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(TmbLomba.this,"Data Telah Masuk", Toast.LENGTH_SHORT).show();
+
+                            }
+                        });*/
+
+                    }
+
+                    @Override
+                    public void onFailure(@NotNull ApolloException e) {
+
+                    }
+
+
+
+                });
+    }
+
+
 	public void mLomba(View v)
     {
         Intent i = new Intent(this,Lomba.class);

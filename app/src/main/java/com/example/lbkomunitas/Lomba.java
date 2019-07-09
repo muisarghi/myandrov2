@@ -1,4 +1,3 @@
-
 package com.example.lbkomunitas;
 
 import androidx.appcompat.app.AppCompatActivity;

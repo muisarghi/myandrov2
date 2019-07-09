@@ -23,7 +23,7 @@ public class TmbDiskusi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tmbdiskusi);
-        Button btnSaveDiskusi= (Button) findViewById(R.id.btnTmbDiskusi);
+        /*Button btnSaveDiskusi= (Button) findViewById(R.id.btnTmbDiskusi);
         btnSaveDiskusi.setOnClickListener(new View.OnClickListener()
         {
 
@@ -33,6 +33,7 @@ public class TmbDiskusi extends AppCompatActivity {
                 startActivity(iz);
             }
         });
+        */
     }
 
 

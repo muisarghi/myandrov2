@@ -1,0 +1,7 @@
+query getAllBeritaQuery{
+  getAllBerita{
+    headline
+    berita
+    createdAt
+  }
+}

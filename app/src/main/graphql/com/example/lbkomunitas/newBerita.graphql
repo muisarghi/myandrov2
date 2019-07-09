@@ -1,0 +1,14 @@
+mutation newBeritaMutation
+(
+  $headline: String!,
+  $berita: String!
+)
+{
+  createBerita(
+    headline: $headline
+    berita: $berita
+  )
+  {
+    id
+  }
+}
