@@ -4,4 +4,12 @@ query getAllDiskusiQuery{
     isi
     createdAt
   }
+
+  getDiskusiDesc (orderBy: id_DESC){
+      id
+      judul
+      isi
+      createdAt
+  }
+
 }

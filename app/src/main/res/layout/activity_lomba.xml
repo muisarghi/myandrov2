@@ -64,7 +64,7 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-
+            <!--
             <TextView
                 android:id="@+id/lomba1"
                 android:layout_width="wrap_content"
@@ -106,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="#ddd"/>
-
+            -->
 
             <ListView
                 android:id="@+id/listView"

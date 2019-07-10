@@ -4,4 +4,12 @@ query getAllBeritaQuery{
     berita
     createdAt
   }
+
+getBeritaDesc (orderBy: id_DESC){
+    id
+    headline
+    berita
+    createdAt
+}
+
 }

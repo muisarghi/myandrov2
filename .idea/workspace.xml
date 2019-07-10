@@ -309,14 +309,6 @@
       <change afterPath="$PROJECT_DIR$/../app v1/app/src/main/res/layout/activity_dashboard.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../app v1/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../app v1/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_apollographql_apollo_apollo_api_0_3_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_apollographql_apollo_apollo_runtime_0_3_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nytimes_android_cache_2_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_moshi_moshi_1_4_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_6_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_11_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_jsr250_api_1_0_jar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bahan/ListView_Multi_Column/ListView_Multi_Column/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bahan/ListView_Multi_Column/ListView_Multi_Column/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../contoh/ListView_Multi_Column/ListView_Multi_Column/.idea/encodings.xml" afterDir="false" />
@@ -8130,9 +8122,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllLomba.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllLomba.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllBerita.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllBerita.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllDiskusi.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllDiskusi.graphql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Berita.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Berita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_berita.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_berita.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lomba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lomba.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -8149,35 +8146,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="129" column="89" lean-forward="true" selection-start-line="129" selection-start-column="89" selection-end-line="129" selection-end-column="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3995#4011#0" expanded="true" />
-                <element signature="e#5618#5976#0" expanded="true" />
-                <element signature="e#5975#5976#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllLomba.graphql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/listViewAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="326">
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -8185,12 +8158,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-          <provider editor-type-id="android-designer2" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Berita.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="71" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1906#1922#0" expanded="true" />
+                <element signature="e#2335#2632#0" expanded="true" />
+                <element signature="e#2631#2632#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/beritaViewAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-382">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllBerita.graphql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -8200,7 +8199,17 @@
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
+              <caret line="113" column="48" selection-start-line="110" selection-start-column="12" selection-end-line="113" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_berita.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="143" column="51" selection-start-line="143" selection-start-column="51" selection-end-line="143" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -8221,10 +8230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tmbpost.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/menuatas.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_coba.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Pencarian.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pencarian.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" />
@@ -8241,7 +8246,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/MyApolloClient.java" />
         <option value="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/schema.json" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lombac.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Constant.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/listviewAdapter.java" />
@@ -8263,21 +8267,26 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tmbberita.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/TmbDiskusi.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/TmbBerita.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_berita.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Berita.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/LombaAdapter.java" />
         <option value="$PROJECT_DIR$/app/build/generated/source/apollo/classes/com/example/lbkomunitas/GetAllLombaQuery.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/CustomListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/listViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_lomba.xml" />
         <option value="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllLomba.graphql" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Menu.java" />
+        <option value="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllDiskusi.graphql" />
+        <option value="$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllBerita.graphql" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_lomba.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_berita.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/beritaViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Berita.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="132" />
-    <option name="y" value="60" />
+    <option name="x" value="139" />
+    <option name="y" value="85" />
     <option name="width" value="1616" />
     <option name="height" value="915" />
   </component>
@@ -8331,6 +8340,27 @@
               <item name="generated" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="apollo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app v2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app v2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="lbkomunitas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app v2" type="b2602c69:ProjectViewProjectNode" />
@@ -8422,6 +8452,23 @@
               <item name="graphql" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app v2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="generatedIR" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="graphql" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="lbkomunitas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app v2" type="b2602c69:ProjectViewProjectNode" />
@@ -8516,7 +8563,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="Pixel_2_API_29" />
+    <property name="device.picker.selection" value="920111b3c0583333" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bahan/ListView_Multi_Column/ListView_Multi_Column" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
@@ -8692,8 +8739,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="132" y="60" width="1616" height="915" extended-state="0" />
-    <editor active="true" />
+    <frame x="139" y="85" width="1616" height="915" extended-state="0" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Image Layers" order="1" />
@@ -8735,10 +8781,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apollo/classes/[ Komunitas Lovebird App v2]/type/CustomType.java" />
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/RequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -8889,13 +8931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apollo/classes/com/example/lbkomunitas/GetAllBeritaQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="202" column="20" selection-start-line="202" selection-start-column="11" selection-end-line="202" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tmbberita.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -8908,18 +8943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Berita.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1654#1937#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -8948,17 +8971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_berita.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
-          <folding>
-            <element signature="e#1123#1156#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -8991,12 +9003,6 @@
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllBerita.graphql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllDiskusi.graphql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/MyApolloClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -9024,6 +9030,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllLomba.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllDiskusi.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/listViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -9037,8 +9067,8 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -9046,26 +9076,64 @@
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllLomba.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <caret line="113" column="48" selection-start-line="110" selection-start-column="12" selection-end-line="113" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Lomba.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="129" column="89" lean-forward="true" selection-start-line="129" selection-start-column="89" selection-end-line="129" selection-end-column="89" />
+        <state relative-caret-position="326">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3995#4011#0" expanded="true" />
-            <element signature="e#5618#5976#0" expanded="true" />
-            <element signature="e#5975#5976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/graphql/com/example/lbkomunitas/getAllBerita.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apollo/classes/com/example/lbkomunitas/GetAllBeritaQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="202" column="20" selection-start-line="202" selection-start-column="11" selection-end-line="202" selection-end-column="20" />
+          <folding>
+            <element signature="e#6419#6420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_berita.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="143" column="51" selection-start-line="143" selection-start-column="51" selection-end-line="143" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/beritaViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-382">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lbkomunitas/Berita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="71" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1906#1922#0" expanded="true" />
+            <element signature="e#2335#2632#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
           </folding>
         </state>
       </provider>
