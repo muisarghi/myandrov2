@@ -127,7 +127,7 @@ public class Lomba extends AppCompatActivity
 
                 //for (GetAllLombaQuery.GetAllLomba feed : response.data().getAllLomba())
 
-                for (GetAllLombaQuery.GetAllLomba feed : response.data().getAllLomba())
+                for (GetAllLombaQuery.GetLombaDesc feed : response.data().getLombaDesc())
                 {
                     HashMap <String, String> temp = new HashMap<String, String>();
                     temp.put(FIRST_COLUMN, feed.lomba());

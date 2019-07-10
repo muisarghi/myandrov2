@@ -4,4 +4,12 @@ query getAllLombaQuery{
     ketlomba
     createdAt
   }
+
+getLombaDesc (orderBy: id_DESC){
+    id
+    lomba
+    ketlomba
+    createdAt
+}
+
 }
