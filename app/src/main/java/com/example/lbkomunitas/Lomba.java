@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.List;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -43,7 +44,11 @@ public class Lomba extends AppCompatActivity
    // ArrayAdapter<CharSequence> adapter;
     //ArrayAdapter<CharSequence> adapterb;
 
+    //20190710
     private ArrayList<HashMap> list;
+    //List<GetAllLombaQuery.GetAllLomba> dummyData = new ArrayList<>();
+   // static CustomListAdapter customListAdapter;
+
 
 	@Override
 	protected void onCreate (Bundle savedInstanceState)
@@ -63,13 +68,15 @@ public class Lomba extends AppCompatActivity
 
 		//getLomba();
 
+
         ListView lview = (ListView) findViewById(R.id.listView);
         populateList();
-        listViewAdapter adapter = new listViewAdapter(this, list);
-        lview.setAdapter(adapter);
+
 
 
 	}
+
+
 
     private void populateList() {
 
@@ -105,10 +112,13 @@ public class Lomba extends AppCompatActivity
         temp4.put(SECOND_COLUMN, "By TechnoTalaktive Pvt. Ltd.");
 
         list.add(temp4);
-        */
+       */
+
         MyApolloClient.getMyApolloCleint().query(
                 GetAllLombaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllLombaQuery.Data>()
         {
+
+
             @Override
             public void onResponse( Response<GetAllLombaQuery.Data> response)
             {
@@ -117,17 +127,31 @@ public class Lomba extends AppCompatActivity
 
                 //for (GetAllLombaQuery.GetAllLomba feed : response.data().getAllLomba())
 
-
+                for (GetAllLombaQuery.GetAllLomba feed : response.data().getAllLomba())
+                {
+                    HashMap <String, String> temp = new HashMap<String, String>();
+                    temp.put(FIRST_COLUMN, feed.lomba());
+                    temp.put(SECOND_COLUMN, feed.ketlomba());
+                    list.add(temp);
+                }
+                /*
                 for (i = 0; i < jumlah; i++)
 
                 {
-                    String lombaxx=response.data().getAllLomba().get(i).lomba();
-                    String lombaxy=response.data().getAllLomba().get(i).ketlomba();
-                    HashMap <String, String> temp = new HashMap<String, String>();
+                    //Object getrow = response.data().getAllLomba.get(i);
+
+                    String lombaxx=response.data().getAllLomba().get().lomba().get(i);
+                    String lombaxy=response.data().getAllLomba().get().ketlomba().get(i);
+                   // String lombaxx=temp.get("lomba");
+                    //String lombaxy=temp.get("ketlomba");
+                    //String lombaxx=response.data().getAllLomba().get(i).get("lomba");
                     temp.put(FIRST_COLUMN, lombaxx.toString());
                     temp.put(SECOND_COLUMN, lombaxy.toString());
                     list.add(temp);
                 }
+                */
+
+                final listViewAdapter adapter = new listViewAdapter(Lomba.this, list);
 
                 /*
                 for (i = 0; i < jumlah; i++)
@@ -140,6 +164,19 @@ public class Lomba extends AppCompatActivity
                     list.add(temp);
                 }
                 */
+                Lomba.this.runOnUiThread(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        //lomba1.setText(buffer.toString());
+                        ListView lview = (ListView) findViewById(R.id.listView);
+
+                        lview.setAdapter(adapter);
+
+                    }
+
+                });
             }
 
 
@@ -168,6 +205,17 @@ public class Lomba extends AppCompatActivity
 
 
                 final StringBuffer buffer = new StringBuffer();
+
+               ////
+                jumlah = GetAllLombaQuery.GetAllLomba.$responseFields.length;
+                for (i = 0; i < jumlah; i++)
+
+                {
+                    buffer.append(response.data().getAllLomba().get(i).lomba());
+                }
+                ////
+
+
                 for (GetAllLombaQuery.GetAllLomba feed : response.data().getAllLomba()) {
                     buffer.append(feed.lomba);
                     buffer.append(" \n ");
