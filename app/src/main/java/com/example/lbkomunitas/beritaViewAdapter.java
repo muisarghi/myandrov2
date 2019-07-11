@@ -1,7 +1,7 @@
 package com.example.lbkomunitas;
 
-import static com.example.lbkomunitas.Constant.FIRST_COLUMN;
-import static com.example.lbkomunitas.Constant.SECOND_COLUMN;
+import static com.example.lbkomunitas.Constant.FIRST_COLUMNBERITA;
+import static com.example.lbkomunitas.Constant.SECOND_COLUMNBERITA;
 
  
 import java.util.ArrayList;
@@ -17,11 +17,11 @@ import android.widget.TextView;
 public class beritaViewAdapter extends BaseAdapter
 {
     public ArrayList<HashMap> listberita;
-    Activity activity;
+    Activity activityberita;
  
-    public beritaViewAdapter(Activity activity, ArrayList<HashMap> listberita) {
+    public beritaViewAdapter(Activity activityberita, ArrayList<HashMap> listberita) {
         super();
-        this.activity = activity;
+        this.activityberita = activityberita;
         this.listberita = listberita;
     }
  
@@ -43,39 +43,39 @@ public class beritaViewAdapter extends BaseAdapter
         return 0;
     }
  
-    private class ViewHolder {
-           TextView txtFirst;
-           TextView txtSecond;
+    private class ViewHolderBerita {
+           TextView txtFirstberita;
+           TextView txtSecondberita;
 
       }
  
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertViewberita, ViewGroup parent) {
         // TODO Auto-generated method stub
  
         // TODO Auto-generated method stub
-                ViewHolder holder;
-                LayoutInflater inflater =  activity.getLayoutInflater();
+                ViewHolderBerita holderberita;
+                LayoutInflater inflaterberita =  activityberita.getLayoutInflater();
  
-                if (convertView == null)
+                if (convertViewberita == null)
                 {
-                    convertView = inflater.inflate(R.layout.list_itemberita, null);
-                    holder = new ViewHolder();
-                    holder.txtFirst = (TextView) convertView.findViewById(R.id.headlinexy);
-                    holder.txtSecond = (TextView) convertView.findViewById(R.id.beritaxy);
-                    convertView.setTag(holder);
+                    convertViewberita = inflaterberita.inflate(R.layout.list_itemberita, null);
+                    holderberita = new ViewHolderBerita();
+                    holderberita.txtFirstberita = (TextView) convertViewberita.findViewById(R.id.headlinexy);
+                    holderberita.txtSecondberita = (TextView) convertViewberita.findViewById(R.id.beritaxy);
+                    convertViewberita.setTag(holderberita);
                 }
                 else
                 {
-                    holder = (ViewHolder) convertView.getTag();
+                    holderberita = (ViewHolderBerita) convertViewberita.getTag();
                 }
  
-                HashMap map = listberita.get(position);
-                holder.txtFirst.setText((CharSequence) map.get(FIRST_COLUMN));
-                holder.txtSecond.setText((CharSequence) map.get(SECOND_COLUMN));
+                HashMap mapberita = listberita.get(position);
+                holderberita.txtFirstberita.setText((CharSequence) mapberita.get(FIRST_COLUMNBERITA));
+                holderberita.txtSecondberita.setText((CharSequence) mapberita.get(SECOND_COLUMNBERITA));
 
  
-            return convertView;
+            return convertViewberita;
     }
  
 }

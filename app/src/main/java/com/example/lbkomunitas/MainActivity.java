@@ -10,6 +10,7 @@ import android.content.Intent;
 //import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        try {
+
+
+            Bundle dataExtra = getIntent().getExtras();
+            String HslDaftar = dataExtra.getString("Pendaftaran");
+            Toast.makeText(this, HslDaftar, Toast.LENGTH_SHORT).show();
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(this, "Selamat Datang", Toast.LENGTH_SHORT).show();
+        }
+
 
         Button btn = (Button) findViewById(R.id.buttonlogin);
         btn.setOnClickListener(new View.OnClickListener()

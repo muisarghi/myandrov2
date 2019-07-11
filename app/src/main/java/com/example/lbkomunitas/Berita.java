@@ -19,30 +19,21 @@ import com.apollographql.apollo.exception.ApolloException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import static com.example.lbkomunitas.Constant.FIRST_COLUMN;
-import static com.example.lbkomunitas.Constant.SECOND_COLUMN;
+import static com.example.lbkomunitas.Constant.FIRST_COLUMNBERITA;
+import static com.example.lbkomunitas.Constant.SECOND_COLUMNBERITA;
 //import android.view.View.OnClickListener;
 
 public class Berita extends AppCompatActivity {
-    private TextView beritaku;
-    private TextView headlinex, beritax;
+   // private TextView beritaku;
+   // private TextView headlinex, beritax;
     private ArrayList<HashMap> listberita;
-    private Integer i, jumlah;
+  //  private Integer i, jumlah;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*
         setContentView(R.layout.activity_berita);
-        beritaku = (TextView) findViewById(R.id.beritax);
-        */
-        headlinex = (TextView) findViewById(R.id.headlinexy);
-
-        beritax = (TextView) findViewById(R.id.beritaxy);
-
-        ListView lviewberita = (ListView) findViewById(R.id.listViewBerita);
         beritaList();
-        //getBerita();
     }
 
 
@@ -55,18 +46,16 @@ public class Berita extends AppCompatActivity {
         {
 
             @Override
-            public void onResponse( Response<GetAllBeritaQuery.Data> response)
+            public void onResponse( Response<GetAllBeritaQuery.Data> responseberita)
             {
-                //jumlah = GetAllBeritaQuery.GetBeritaDesc.$responseFields.length;
 
-                for (GetAllBeritaQuery.GetBeritaDesc feedberita : response.data().getBeritaDesc())
+                for (GetAllBeritaQuery.GetBeritaDesc feedberita : responseberita.data().getBeritaDesc())
                 {
                     HashMap <String, String> tempberita = new HashMap<String, String>();
-                    tempberita.put(FIRST_COLUMN, feedberita.headline());
-                    tempberita.put(SECOND_COLUMN, feedberita.berita());
+                    tempberita.put(FIRST_COLUMNBERITA, feedberita.headline());
+                    tempberita.put(SECOND_COLUMNBERITA, feedberita.berita());
                     listberita.add(tempberita);
                 }
-
 
                 final beritaViewAdapter adapterberita = new beritaViewAdapter(Berita.this, listberita);
 
@@ -76,7 +65,6 @@ public class Berita extends AppCompatActivity {
                     @Override
                     public void run()
                     {
-
                         ListView lviewberita = (ListView) findViewById(R.id.listViewBerita);
 
                         lviewberita.setAdapter(adapterberita);
@@ -93,49 +81,8 @@ public class Berita extends AppCompatActivity {
 
         });
 
-
-
     }
-    /*
-    private void getBerita()
-    {
-        MyApolloClient.getMyApolloCleint().query(GetAllBeritaQuery.builder().build()).enqueue
-                (new ApolloCall.Callback<GetAllBeritaQuery.Data>()
-                {
 
-                    @Override
-                    public void onResponse( Response<GetAllBeritaQuery.Data> response)
-                    {
-                        final StringBuffer bufferber = new StringBuffer();
-                        for (GetAllBeritaQuery.GetAllBeritum feed : response.data().getAllBerita()) {
-                            bufferber.append(feed.headline);
-                            bufferber.append(" \n ");
-                            bufferber.append(feed.berita);
-                            bufferber.append(" \n \n ");
-                        }
-
-
-                        Berita.this.runOnUiThread(new Runnable()
-                        {
-                            @Override
-                            public void run()
-                            {
-                                beritaku.setText(bufferber.toString());
-
-                            }
-
-                        });
-
-
-                    }
-                    @Override
-                    public void onFailure(ApolloException e)
-                    {
-                    }
-                });
-
-    }
-   */
 	public void mLomba(View v)
     {
         Intent i = new Intent(this,Lomba.class);

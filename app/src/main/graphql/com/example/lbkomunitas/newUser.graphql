@@ -1,0 +1,22 @@
+mutation newUserMutation
+(
+  $nama: String!,
+  $alamat: String!,
+  $email: String!,
+  $nohp: String!,
+  $biografi: String!,
+  $password: String!
+)
+{
+  createUser(
+  nama: $nama,
+  alamat: $alamat,
+  email: $email,
+  nohp: $nohp,
+  biografi: $biografi,
+  password: $password
+  )
+  {
+    id
+  }
+}
