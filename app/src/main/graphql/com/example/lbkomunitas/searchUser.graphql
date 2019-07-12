@@ -1,0 +1,10 @@
+query searchUserQuery($searchNama:String!){
+ 
+searchUser(searchNama: $searchNama, orderBy:nama_ASC)
+  {
+    id
+    nama
+    email
+  }
+}
+

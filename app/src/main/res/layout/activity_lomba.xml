@@ -117,6 +117,20 @@
         </LinearLayout>
         <!--</ScrollView>-->
 
+        <!--
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fab"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logout"
+            android:layout_marginBottom="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:civ_border_color="#ff0000"
+            app:civ_border_width="1dp"
+            android:onClick="Ancur"
+            />-->
 
         <LinearLayout
             android:id="@+id/linBottom"
@@ -128,6 +142,7 @@
             android:orientation="horizontal"
             android:paddingTop="8dp"
             android:paddingBottom="8dp">
+
 
             <fragment
                 android:id="@+id/Fragment2"

@@ -9,16 +9,37 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+//import android.support.design.widget.FloatingActionButton;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+
 
 public class Profile extends AppCompatActivity {
+    private FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+
+
+
+/*pada method onCreate, panggil fab dari xml
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        */
+
     }
-	
+
+
+
 	public void mLomba(View v)
     {
         Intent i = new Intent(this,Lomba.class);

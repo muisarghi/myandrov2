@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         Button btn = (Button) findViewById(R.id.buttonlogin);
         btn.setOnClickListener(new View.OnClickListener()
         {
-
             @Override
             public void onClick(View v){
                 Intent i = new Intent(MainActivity.this,Dashboard.class);
