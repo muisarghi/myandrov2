@@ -72,10 +72,13 @@ public class Pencarian extends AppCompatActivity {
         TextView myOutputBox = (TextView) findViewById(R.id.hslCari);
 
 
-        //EditText searchNamas = (EditText)findViewById(R.id.editSearch);
+        EditText searchNamaso = (EditText)findViewById(R.id.editSearch);
         //TextView searchNamas = setText(s);
-        String searchNamas = String.valueOf(s);
-        myOutputBox.setText(searchNamas);
+       String searchNamass = String.valueOf(s);
+       //EditText searchNamas = String.valueOf(s);
+        //EditText searchNamas = setText(String.valueOf(s));
+        //String searchNamas = "Adi";
+        myOutputBox.setText(searchNamass);
         listsUser = new ArrayList<HashMap>();
         //.searchNama(searchNamas.getText().toString())
         /*
@@ -99,7 +102,7 @@ public class Pencarian extends AppCompatActivity {
             */
         MyApolloClient.getMyApolloCleint().query(
                 SearchUserQuery.builder()
-                        .searchNama(searchNamas)
+                        .searchNama(searchNamaso.toString())
                         .build())
                 .enqueue(new ApolloCall.Callback<SearchUserQuery.Data>()
         {
