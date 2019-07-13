@@ -27,6 +27,8 @@ import static com.example.lbkomunitas.Constant.SECOND_COLUMN;
 
 public class Pencarian extends AppCompatActivity {
     private ArrayList<HashMap> listsUser;
+    private EditText Search;
+    private TextView s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,7 @@ public class Pencarian extends AppCompatActivity {
 
         //ListView lview = (ListView) findViewById(R.id.listViewsUser);
 
-
+        final EditText searchNamas = (EditText)findViewById(R.id.editSearch);
         EditText myTextBox = (EditText) findViewById(R.id.editSearch);
         myTextBox.addTextChangedListener(new TextWatcher() {
 
@@ -51,10 +53,13 @@ public class Pencarian extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count)
             {
-                TextView myOutputBox = (TextView) findViewById(R.id.hslCari);
-                myOutputBox.setText(s);
+                //TextView myOutputBox = (TextView) findViewById(R.id.hslCari);
+                //TextView myOutputBox = (TextView) findViewById(R.id.editSearch);
+               // myOutputBox.setText(s);
+                //Search search = new Search();
+                //search.(searchNamas.toString());
 
-                //populateListsUser();
+                populateListsUser(s);
                 //String searchNama=myOutputBox;
 
             }
@@ -62,11 +67,36 @@ public class Pencarian extends AppCompatActivity {
 
     }
 
-    /*
-    private void populateListsUser(String searchNamas) {
-        EditText searchNamas = (EditText)findViewById(R.id.editSearch);
+
+    private void populateListsUser(CharSequence s) {
+        TextView myOutputBox = (TextView) findViewById(R.id.hslCari);
+
+
+        //EditText searchNamas = (EditText)findViewById(R.id.editSearch);
+        //TextView searchNamas = setText(s);
+        String searchNamas = String.valueOf(s);
+        myOutputBox.setText(searchNamas);
         listsUser = new ArrayList<HashMap>();
         //.searchNama(searchNamas.getText().toString())
+        /*
+        *final HeroAndFriendsNames heroAndFriendsQuery = HeroAndFriendsNames.builder()
+    .episode(NEWHOPE)
+    .build();
+        *
+        MyApolloClient.getMyApolloCleint().query(
+                SearchUserQuery.builder()
+                        .searchNama(searchNamas)
+                        .build())
+                .enqueue(new ApolloCall.Callback<SearchUserQuery.Data>()
+                .searchNama(findViewById(R.id.editSearch).toString())
+                */
+        /*
+        final SearchUserQuery searchUserQuerys = SearchUserQuery.builder()
+                .searchNama(searchNamas)
+                .build();
+        MyApolloClient.getMyApolloCleint().query(searchUserQuerys)
+                .enqueue(new ApolloCall.Callback<SearchUserQuery.Data>()
+            */
         MyApolloClient.getMyApolloCleint().query(
                 SearchUserQuery.builder()
                         .searchNama(searchNamas)
@@ -116,7 +146,7 @@ public class Pencarian extends AppCompatActivity {
 
 
     }
-*/
+
 
 
 	public void mLomba(View v)
