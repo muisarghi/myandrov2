@@ -13,13 +13,21 @@ import android.widget.ImageView;
 
 public class Dashboard extends AppCompatActivity
 {
-
+    private String token;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
+        /*
+         Intent intent = new Intent(this, Lomba.class);
+        intent.putExtra("token", token);
+        startActivity(intent);
+        */
     }
 
 
