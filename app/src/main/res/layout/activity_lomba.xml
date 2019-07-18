@@ -107,6 +107,14 @@
                 android:layout_height="2dp"
                 android:background="#ddd"/>
             -->
+                <!--<TextView
+                    android:id="@+id/cubo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOKEN"
+                    android:textSize="10dp"
+                    />-->
 
             <ListView
                 android:id="@+id/listView"

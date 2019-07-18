@@ -124,6 +124,15 @@
             android:paddingTop="0dp"
             android:paddingBottom="20dp">
 
+            <!--<EditText
+                android:id="@+id/cubo"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textSize="12sp" />-->
+
             <Button
                 android:id="@+id/btnTmbLomba"
                 android:layout_width="wrap_content"

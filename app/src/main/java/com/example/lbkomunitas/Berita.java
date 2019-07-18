@@ -13,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 
@@ -21,6 +22,7 @@ import java.util.HashMap;
 
 import static com.example.lbkomunitas.Constant.FIRST_COLUMNBERITA;
 import static com.example.lbkomunitas.Constant.SECOND_COLUMNBERITA;
+import static com.example.lbkomunitas.MyApolloClient.*;
 //import android.view.View.OnClickListener;
 
 public class Berita extends AppCompatActivity {
@@ -40,8 +42,10 @@ public class Berita extends AppCompatActivity {
     private void beritaList() {
 
         listberita = new ArrayList<HashMap>();
+        ApolloClient query = new MyApolloClient().getMyApolloCleint();
 
-        MyApolloClient.getMyApolloCleint().query(
+        //MyApolloClient().getMyApolloCleint().query(
+        query.query(
                 GetAllBeritaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllBeritaQuery.Data>()
         {
 

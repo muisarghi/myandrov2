@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 
@@ -41,7 +42,9 @@ public class TmbBerita extends AppCompatActivity {
         EditText editheadlines = (EditText)findViewById(R.id.editHeadline);
         EditText editberitas = (EditText)findViewById(R.id.editBerita);
 
-        MyApolloClient.getMyApolloCleint().mutate(NewBeritaMutation.builder()
+        //MyApolloClient.getMyApolloCleint().mutate(NewBeritaMutation.builder()
+        ApolloClient mutation = new MyApolloClient().getMyApolloCleint();
+        mutation.mutate(NewBeritaMutation.builder()
                 .headline(editheadlines.getText().toString())
                 .berita(editberitas.getText().toString()).build())
                 .enqueue(new ApolloCall.Callback<NewBeritaMutation.Data>() {

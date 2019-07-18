@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.HashMap;
 import java.util.ArrayList;
 import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 //import android.view.View.OnClickListener;
@@ -39,8 +40,9 @@ public class Diskusi extends AppCompatActivity {
     private void diskusiList() {
 
         listdiskusi = new ArrayList<HashMap>();
-
-        MyApolloClient.getMyApolloCleint().query(
+        ApolloClient query = new MyApolloClient().getMyApolloCleint();
+        query.query(
+        //MyApolloClient.getMyApolloCleint().query(
                 GetAllDiskusiQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllDiskusiQuery.Data>()
         {
 

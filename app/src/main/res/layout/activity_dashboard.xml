@@ -60,13 +60,23 @@
                         android:onClick="nCari"
                         />
 
-                    <TextView
+                    <!--<TextView
                         android:id="@+id/textView7b"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_weight="1"
                         android:textSize="14dp"
                         android:text="Adi Budi"
+                        android:onClick="nCari"
+                        />-->
+
+                    <TextView
+                        android:id="@+id/cubo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textSize="14dp"
+                        android:text="token"
                         android:onClick="nCari"
                         />
 

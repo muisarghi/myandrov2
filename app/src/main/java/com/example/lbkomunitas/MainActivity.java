@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 
@@ -99,7 +100,9 @@ public class MainActivity extends AppCompatActivity {
 
         EditText emails = (EditText)findViewById(R.id.editTextEmail);
         EditText passwords = (EditText)findViewById(R.id.editTextPassword);
-        MyApolloClient.getMyApolloCleint().mutate(LoginMutation.builder()
+        //MyApolloClient.getMyApolloCleint().mutate(LoginMutation.builder()
+        ApolloClient mutation = new MyApolloClient().getMyApolloCleint();
+        mutation.mutate(LoginMutation.builder()
                 .email(emails.getText().toString())
                 .password(passwords.getText().toString())
                 .build())

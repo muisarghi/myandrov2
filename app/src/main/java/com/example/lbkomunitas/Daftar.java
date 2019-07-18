@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 
@@ -47,7 +48,9 @@ public class Daftar extends AppCompatActivity {
         EditText editPasswords = (EditText)findViewById(R.id.editTextPassword);
 
 
-        MyApolloClient.getMyApolloCleint().mutate(NewUserMutation.builder()
+        //MyApolloClient.getMyApolloCleint().mutate(NewUserMutation.builder()
+        ApolloClient mutation = new MyApolloClient().getMyApolloCleint();
+        mutation.mutate(NewUserMutation.builder()
                 .nama(editNamas.getText().toString())
                 .alamat(editAlamats.getText().toString())
                 .email(editEmails.getText().toString())

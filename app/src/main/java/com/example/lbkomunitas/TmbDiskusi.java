@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 
@@ -42,7 +43,9 @@ public class TmbDiskusi extends AppCompatActivity {
         EditText editdiskusis = (EditText)findViewById(R.id.editDiskusi);
         EditText editisidiskusis = (EditText)findViewById(R.id.editIsiDiskusi);
 
-        MyApolloClient.getMyApolloCleint().mutate(NewDiskusiMutation.builder()
+        //MyApolloClient.getMyApolloCleint().mutate(NewDiskusiMutation.builder()
+        ApolloClient mutation = new MyApolloClient().getMyApolloCleint();
+        mutation.mutate(NewDiskusiMutation.builder()
                 .judul(editdiskusis.getText().toString())
                 .isi(editisidiskusis.getText().toString()).build())
                 .enqueue(new ApolloCall.Callback<NewDiskusiMutation.Data>() {

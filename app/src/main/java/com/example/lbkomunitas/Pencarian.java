@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 
@@ -100,7 +101,9 @@ public class Pencarian extends AppCompatActivity {
         MyApolloClient.getMyApolloCleint().query(searchUserQuerys)
                 .enqueue(new ApolloCall.Callback<SearchUserQuery.Data>()
             */
-        MyApolloClient.getMyApolloCleint().query(
+        //MyApolloClient.getMyApolloCleint().query(
+        ApolloClient query = new MyApolloClient().getMyApolloCleint();
+        query.query(
                 SearchUserQuery.builder()
                         .searchNama(searchNamaso.toString())
                         .build())

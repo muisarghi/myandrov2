@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
 //import javax.annotation.Nonnull;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 
 import static com.example.lbkomunitas.Constant.FIRST_COLUMN;
 import static com.example.lbkomunitas.Constant.SECOND_COLUMN;
+import static com.example.lbkomunitas.Constant.THIRD_COLUMN;
 
 
 public class Lomba extends AppCompatActivity
@@ -37,7 +39,7 @@ public class Lomba extends AppCompatActivity
     private ListView listView;
 
     private ArrayList<HashMap> list;
-
+    private String token;
 
 
 
@@ -46,12 +48,19 @@ public class Lomba extends AppCompatActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lomba);
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+        //TextView myOutputBox = (TextView) findViewById(R.id.cubo);
+        //myOutputBox.setText(token);
+
 
         lombax = (TextView) findViewById(R.id.lombaxy);
 
         ketlombax = (TextView) findViewById(R.id.ketlombaxy);
 
         ListView lview = (ListView) findViewById(R.id.listView);
+
+
         populateList();
 
 	}
@@ -62,7 +71,9 @@ public class Lomba extends AppCompatActivity
 
         list = new ArrayList<HashMap>();
 
-        MyApolloClient.getMyApolloCleint().query(
+        //MyApolloClient.getMyApolloCleint().query(
+        ApolloClient query = new MyApolloClient().getMyApolloCleint();
+        query.query(
                 GetAllLombaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllLombaQuery.Data>()
         {
 
@@ -76,6 +87,9 @@ public class Lomba extends AppCompatActivity
                     HashMap <String, String> temp = new HashMap<String, String>();
                     temp.put(FIRST_COLUMN, feed.lomba());
                     temp.put(SECOND_COLUMN, feed.ketlomba());
+                    temp.put(THIRD_COLUMN, "Written By: " + feed.writtenBy().nama() + " @ " + feed.createdAt());
+                    //temp.put(SECOND_COLUMN, feed.writtenBy().nama());
+                    //temp.put(THIRD_COLUMN, feed.ketlomba());
                     list.add(temp);
                 }
 
@@ -111,49 +125,81 @@ public class Lomba extends AppCompatActivity
 
     public void mLomba(View v)
     {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
         Intent i = new Intent(this,Lomba.class);
+        i.putExtra("token", token);
         startActivity(i);
     }
 
     public void mDiskusi(View v)
     {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
         Intent ia = new Intent(this,Diskusi.class);
+        ia.putExtra("token", token);
         startActivity(ia);
     }
 
     public void mHome(View v)
     {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
         Intent ib = new Intent(this,Dashboard.class);
+        ib.putExtra("token", token);
         startActivity(ib);
     }
 
     public void mBerita(View v)
     {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
         Intent ic = new Intent(this,Berita.class);
+        ic.putExtra("token", token);
         startActivity(ic);
     }
 
     public void mCari(View v)
     {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
         Intent id = new Intent(this,Pencarian.class);
+        id.putExtra("token", token);
         startActivity(id);
     }
 
     public void mTmb(View v)
     {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
         Intent ie = new Intent(this,TmbLomba.class);
+        ie.putExtra("token", token);
         startActivity(ie);
     }
 
     public void mLike(View v)
     {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
         Intent ig = new Intent(this,Like.class);
+        ig.putExtra("token", token);
         startActivity(ig);
     }
 
     public void mProfile(View v)
     {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+
         Intent ih = new Intent(this,Profile.class);
+        ih.putExtra("token", token);
         startActivity(ih);
     }
 
