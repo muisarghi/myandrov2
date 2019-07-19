@@ -81,6 +81,7 @@ public class Lomba extends AppCompatActivity
             public void onResponse( Response<GetAllLombaQuery.Data> response)
             {
                 jumlah = GetAllLombaQuery.GetAllLomba.$responseFields.length;
+                final StringBuffer buffer1 = new StringBuffer();
 
                 for (GetAllLombaQuery.GetLombaDesc feed : response.data().getLombaDesc())
                 {
@@ -93,6 +94,12 @@ public class Lomba extends AppCompatActivity
                     list.add(temp);
                 }
 
+                Integer akuo = response.data().countLomba().aggregate().count();
+                final String akuob = "Terdapat " + akuo + " Daftar Lomba ";
+               /* for (GetAllLombaQuery.CountLomba feedc : response.data().countLomba())
+                {
+                    buffer1.append("Terdapat " + feedc.aggregate().count() + " Daftar Lomba");
+                }*/
 
                 final listViewAdapter adapter = new listViewAdapter(Lomba.this, list);
 
@@ -106,6 +113,8 @@ public class Lomba extends AppCompatActivity
                         ListView lview = (ListView) findViewById(R.id.listView);
 
                         lview.setAdapter(adapter);
+                        TextView txtResponse = (TextView) findViewById(R.id.countLomba);
+                        txtResponse.setText(akuob.toString());
                     }
 
                 });

@@ -2,6 +2,7 @@ package com.example.lbkomunitas;
 
 import static com.example.lbkomunitas.Constant.FIRST_COLUMNBERITA;
 import static com.example.lbkomunitas.Constant.SECOND_COLUMNBERITA;
+import static com.example.lbkomunitas.Constant.THIRD_COLUMNBERITA;
 
  
 import java.util.ArrayList;
@@ -46,6 +47,7 @@ public class beritaViewAdapter extends BaseAdapter
     private class ViewHolderBerita {
            TextView txtFirstberita;
            TextView txtSecondberita;
+        TextView txtThirdberita;
 
       }
  
@@ -63,6 +65,7 @@ public class beritaViewAdapter extends BaseAdapter
                     holderberita = new ViewHolderBerita();
                     holderberita.txtFirstberita = (TextView) convertViewberita.findViewById(R.id.headlinexy);
                     holderberita.txtSecondberita = (TextView) convertViewberita.findViewById(R.id.beritaxy);
+                    holderberita.txtThirdberita = (TextView) convertViewberita.findViewById(R.id.beritaat);
                     convertViewberita.setTag(holderberita);
                 }
                 else
@@ -73,6 +76,7 @@ public class beritaViewAdapter extends BaseAdapter
                 HashMap mapberita = listberita.get(position);
                 holderberita.txtFirstberita.setText((CharSequence) mapberita.get(FIRST_COLUMNBERITA));
                 holderberita.txtSecondberita.setText((CharSequence) mapberita.get(SECOND_COLUMNBERITA));
+                holderberita.txtThirdberita.setText((CharSequence) mapberita.get(THIRD_COLUMNBERITA));
 
  
             return convertViewberita;

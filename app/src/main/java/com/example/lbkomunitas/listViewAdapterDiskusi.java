@@ -2,6 +2,7 @@ package com.example.lbkomunitas;
 
 import static com.example.lbkomunitas.Constant.FIRST_COLUMN;
 import static com.example.lbkomunitas.Constant.SECOND_COLUMN;
+import static com.example.lbkomunitas.Constant.THIRD_COLUMN;
 
  
 import java.util.ArrayList;
@@ -46,6 +47,7 @@ public class listViewAdapterDiskusi extends BaseAdapter
     private class ViewHolder {
            TextView txtFirst;
            TextView txtSecond;
+            TextView txtThird;
 
       }
  
@@ -63,6 +65,7 @@ public class listViewAdapterDiskusi extends BaseAdapter
                     holder = new ViewHolder();
                     holder.txtFirst = (TextView) convertView.findViewById(R.id.diskusixy);
                     holder.txtSecond = (TextView) convertView.findViewById(R.id.isixy);
+                    holder.txtThird = (TextView) convertView.findViewById(R.id.diskusiat);
                     convertView.setTag(holder);
                 }
                 else
@@ -73,6 +76,7 @@ public class listViewAdapterDiskusi extends BaseAdapter
                 HashMap map = list.get(position);
                 holder.txtFirst.setText((CharSequence) map.get(FIRST_COLUMN));
                 holder.txtSecond.setText((CharSequence) map.get(SECOND_COLUMN));
+                holder.txtThird.setText((CharSequence) map.get(THIRD_COLUMN));
 
  
             return convertView;

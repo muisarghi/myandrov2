@@ -4,7 +4,7 @@ query getAllLombaQuery{
     ketlomba
     createdAt
     writtenBy {nama}
-  }
+  },
 
 getLombaDesc (orderBy: id_DESC){
     id
@@ -12,6 +12,12 @@ getLombaDesc (orderBy: id_DESC){
     ketlomba
     createdAt
     writtenBy{nama}
-}
+},
+
+countLomba
+  {
+	aggregate {count}
+  }
+
 
 }

@@ -1,0 +1,6 @@
+query countLombaQuery{
+  getCountLomba{
+    aggregate { }
+  }
+
+}
