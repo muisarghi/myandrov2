@@ -136,9 +136,17 @@ public class Profile extends AppCompatActivity {
     }
 
 
+    public void nBtnEditProfile(View vk)
+    {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+        Intent ik = new Intent(this,EditProfile.class);
+        ik.putExtra("token", token);
+        startActivity(ik);
+    }
 
 
-	public void mLomba(View v)
+    public void mLomba(View v)
     {
         Intent intent = getIntent();
         token = intent.getStringExtra("token");

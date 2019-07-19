@@ -17,6 +17,10 @@ public class EditProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editprofile);
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+        
+        /*
         Button btnSaveProfile = (Button) findViewById(R.id.btnSaveProfile);
         btnSaveProfile.setOnClickListener(new View.OnClickListener()
         {
@@ -30,6 +34,7 @@ public class EditProfile extends AppCompatActivity {
                 startActivity(iz);
             }
         });
+        */
         
     }
 	

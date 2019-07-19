@@ -5,6 +5,17 @@ searchUser(searchNama: $searchNama, orderBy:nama_ASC)
     id
     nama
     email
+  },
+
+  getUserDetail
+  {
+  id
+  nama
+  email
+  alamat
+  nohp
+  biografi
   }
+
 }
 
