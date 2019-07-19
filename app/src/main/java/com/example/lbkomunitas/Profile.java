@@ -9,10 +9,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 //import android.support.design.widget.FloatingActionButton;
 
+import com.apollographql.apollo.ApolloCall;
+import com.apollographql.apollo.ApolloClient;
+import com.apollographql.apollo.api.Response;
+import com.apollographql.apollo.exception.ApolloException;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.HashMap;
+
+import static com.example.lbkomunitas.Constant.FIRST_COLUMN;
+import static com.example.lbkomunitas.Constant.SECOND_COLUMN;
+import static com.example.lbkomunitas.Constant.THIRD_COLUMN;
 
 
 public class Profile extends AppCompatActivity {
@@ -26,7 +37,8 @@ public class Profile extends AppCompatActivity {
         Intent intent = getIntent();
         token = intent.getStringExtra("token");
 
-
+        jmllomba();
+        jmlberita();
 
 
 /*pada method onCreate, panggil fab dari xml
@@ -40,6 +52,89 @@ public class Profile extends AppCompatActivity {
         */
 
     }
+
+    public void jmllomba()
+    {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+        ApolloClient query = new MyApolloClient(token).getMyApolloCleint();
+        query.query(
+                GetAllLombaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllLombaQuery.Data>()
+        {
+
+            @Override
+            public void onResponse( Response<GetAllLombaQuery.Data> response)
+            {
+                final StringBuffer buffer1 = new StringBuffer();
+
+                Integer akuo = response.data().countLombaId().aggregate().count();
+                //GetAllLombaQuery.CountLomba buffer1 : response.data().countLombaId().aggregate()
+                //Integer akuo = 100;
+                final String akuob = " " + akuo + " ";
+
+
+                Profile.this.runOnUiThread(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        TextView txtJCId = (TextView) findViewById(R.id.countLombaId);
+                        txtJCId.setText(akuob.toString());
+                    }
+
+                });
+            }
+
+
+            @Override
+            public void onFailure(ApolloException e)
+            {}
+
+
+        });
+    }
+
+    public void jmlberita()
+    {
+        Intent intent = getIntent();
+        token = intent.getStringExtra("token");
+        ApolloClient query = new MyApolloClient(token).getMyApolloCleint();
+        query.query(
+                GetAllBeritaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllBeritaQuery.Data>()
+        {
+
+            @Override
+            public void onResponse( Response<GetAllBeritaQuery.Data> responseb)
+            {
+
+
+                Integer akuob = responseb.data().countBeritaId().aggregate().count();
+                //GetAllLombaQuery.CountLomba buffer1 : response.data().countLombaId().aggregate()
+                //Integer akuo = 100;
+                final String akuobb = " " + akuob + " ";
+
+
+                Profile.this.runOnUiThread(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        TextView txtJCIdb = (TextView) findViewById(R.id.countBeritaId);
+                        txtJCIdb.setText(akuobb.toString());
+                    }
+
+                });
+            }
+
+
+            @Override
+            public void onFailure(ApolloException e)
+            {}
+
+
+        });
+    }
+
 
 
 

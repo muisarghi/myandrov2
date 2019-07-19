@@ -72,10 +72,10 @@ public class Lomba extends AppCompatActivity
                             String myketlomba=response.data().getAllLomba().get(i).ketlomba()
                         }
                         */
-
+						
 
                         for (GetAllLombaQuery.GetAllLomba feed : response.data().getAllLomba())
-
+						
                         {
                             buffer1.append(feed.lomba);
                             buffer1.append('*');

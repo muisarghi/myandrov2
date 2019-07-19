@@ -68,6 +68,9 @@ public class Berita extends AppCompatActivity {
                     listberita.add(tempberita);
                 }
 
+                Integer akuo = responseberita.data().countBerita().aggregate().count();
+                final String akuob = "Terdapat " + akuo + " Daftar Lomba ";
+
                 final beritaViewAdapter adapterberita = new beritaViewAdapter(Berita.this, listberita);
 
 

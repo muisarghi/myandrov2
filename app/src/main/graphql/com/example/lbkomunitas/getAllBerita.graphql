@@ -4,7 +4,7 @@ query getAllBeritaQuery{
     berita
     createdAt
     writtenBy {nama}
-  }
+  },
 
 getBeritaDesc (orderBy: id_DESC){
     id
@@ -12,6 +12,16 @@ getBeritaDesc (orderBy: id_DESC){
     berita
     createdAt
     writtenBy {nama}
-}
+},
+
+countBerita
+  {
+	aggregate {count}
+  }
+
+countBeritaId
+  {
+	aggregate {count}
+  }
 
 }

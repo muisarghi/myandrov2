@@ -72,7 +72,7 @@ public class Lomba extends AppCompatActivity
         list = new ArrayList<HashMap>();
 
         //MyApolloClient.getMyApolloCleint().query(
-        ApolloClient query = new MyApolloClient().getMyApolloCleint();
+        ApolloClient query = new MyApolloClient(token).getMyApolloCleint();
         query.query(
                 GetAllLombaQuery.builder().build()).enqueue(new ApolloCall.Callback<GetAllLombaQuery.Data>()
         {

@@ -19,5 +19,9 @@ countLomba
 	aggregate {count}
   }
 
+countLombaId
+  {
+	aggregate {count}
+  }
 
 }

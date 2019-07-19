@@ -63,7 +63,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="12"
+                android:text="0"
                 android:textAlignment="center"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
@@ -85,10 +85,10 @@
             android:layout_marginLeft="205dp"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/textView3b"
+                android:id="@+id/countBeritaId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="13"
+                android:text="0"
                 android:textAlignment="center"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
@@ -110,10 +110,10 @@
             android:layout_marginLeft="305dp"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/textView3b"
+                android:id="@+id/countLombaId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5"
+                android:text="0"
                 android:textAlignment="center"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
